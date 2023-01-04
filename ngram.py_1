@@ -1,0 +1,7 @@
+import nltk
+nltk.download();
+from nltk.util import ngrams
+sampletext = "Amaljyothi college is an engineering college"
+NGRAMS=ngrams(sequence=nltk.word_tokenize(sampletext),n=3)
+for grams in NGRAMS :
+    print(grams);
